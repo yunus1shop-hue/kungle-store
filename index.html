@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kungle Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(120deg, #0f0f0f, #1c1c1c);
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .box {
+      max-width: 500px;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      animation: slideDown 1s ease forwards;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 1s;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: #ffffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+      animation-delay: 2s;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1>Come on in and explore the Kungle Store</h1>
+    <p>
+      I know, I know. The place is impressive.  
+      Take a breath, look around, and try to keep it together.
+    </p>
+
+    <a class="btn" href="store.html">Enter the Store</a>
+  </div>
+</body>
+</html>
